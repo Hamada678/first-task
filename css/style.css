@@ -1,0 +1,1046 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(36, 36, 36);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    width: 100%;
+}
+.header{
+    width: 80%;
+    height: 75px;
+    margin-left: 10%;
+    background-color:rgba(0, 0, 0 , 0.7);
+    position: fixed;
+    z-index: 30;
+    border-radius: 10px;
+    overflow: auto;
+}
+.header:hover{
+    opacity: 1;
+}
+.logo{
+    float: left;
+    width: 200px;
+    height: 75px;
+}
+.links{
+    float: left;
+    margin-left: 450px;
+    list-style: none;
+}
+.links li{
+    margin-left: 50px;
+    margin-top: 25px;
+    display: inline-block;
+}
+.links li a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding-bottom: 8px;
+}
+.links li a::after{
+    content: "";
+    width: 0;
+    height: 7px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+.links li a:hover::after{
+    width: 100%;
+    height: 7px;
+    background-color: #030fe9;
+    border-radius: 3px;
+}
+/* ///////////////////////////////////////////////ai section  ////////////////////////////////////////////////////// */
+.ai{
+    background-image: url(../images/Quote-2-transformed.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.ai-content{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    margin: auto;
+    margin-top: 250px;
+}
+.ai-title{
+    color: #fff;
+    text-decoration: underline;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.ai-p{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.ai-btn1{
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(12, 20, 162);
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.ai-btn1:hover{
+    width: 160px;
+    height: 60px;
+    background-color:rgb(26, 59, 189,) ;
+    border-radius: 10px;
+    font-size: 30px;
+}
+/* important section////////////////////////////////////////////////////////////////////////////// */
+.important{
+    background-image: url(../images/Types_of_Artificial_Intelligence.png);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.impo-info{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+.impo-info-h2{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.impo-info-p{
+    width: 100px;
+    height: 4px;
+    background-color:white;
+    margin: auto;
+    margin-top: 5px;
+}
+.impo-elements{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+}
+.impo-content{
+    width: 30%;
+    height: 210px;
+    float: left;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+    transition: 2s;
+    line-height: 25px;
+}
+.impo-content:hover h2{
+    color: black;
+
+}
+.impo-content:hover p{
+    color: black;
+
+}
+.div2{
+    margin: 0 5%;
+}
+.impo-icon{
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+}
+.impo-content:hover .impo-icon{
+    color: black;
+}
+.impo-content-h2{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 25px;
+}
+.impo-content-p2{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+.impo-content-a{
+    text-decoration: none;
+    color: rgb(12, 12, 225);
+    transition: 0.5s;
+}
+.overlay2{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.impo-content-a:hover{
+    background-color: rgb(13, 13, 232);
+    color: #fff;
+    border-radius: 5px;
+    width: 40px;
+    height: 20px;
+    font-size: larger;
+}
+.impo-content::after {
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0; 
+
+    background-color: #ffffff;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+    border-radius: 10px;
+}
+.impo-content:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity:0.5;
+    border-radius: 10px;
+}
+/*  components section/////////////////////////////////////////////////////////////////////////////////////////// */
+.components{
+    width: 100%;
+    height: 1000px;
+    background-image: url(../images/shutterstock_1131418724.jpg);
+    background-size: cover;
+    position: relative;
+}
+.components-title{
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translate(-50%,0);
+}
+.components-title h2{
+    text-transform: capitalize;
+    font-size: 35px;
+}
+.components-title p{
+    height: 4px;
+    width: 100px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 5px;
+}
+.components-container1{
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    left: 10%;
+    top: 200px;
+}
+.components-items1{
+    height: 300px;
+    width: 350px;
+    background-image: url(../images/blogs-banner-1-11-1.jpg);
+    background-size: cover;
+    float: left;
+    border-radius: 10px;
+}
+.components-items2{
+    height: 300px;
+    width: 350px;
+    background-image: url(../images/blogs-banner-1-12-1.jpg);
+    background-size: cover;
+   float: left;
+   margin-left: 85px;
+   margin-right: 30px;
+   border-radius: 10px;
+}
+.components-items3{
+    height: 300px;
+    width: 350px;
+    background-image: url(../images/blogs-banner-1-13-1.jpg);
+    background-size: cover;
+    float: left;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+.components-container2{
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    left: 10%;
+    top: 600px;
+}
+.components-items4{
+    height: 300px;
+    width: 350px;
+    background-image: url(../images/blogs-banner-1-14-1.jpg);
+    background-size: cover;
+    float: left;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+.components-items5{
+    height: 300px;
+    width: 350px;
+    background-image: url(../images/blogs-banner-1-15-1.jpg);
+    background-size: cover;
+    float: left;
+    margin-left: 110px;
+    border-radius: 10px;
+}
+.overlayc1{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: relative;
+}
+.overlayc2{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    transition: 0.5s;
+}
+.overlayc2:hover{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+.overlayc2 p{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.overlayc2 .icon1{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.overlayc2:hover p{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 50px;
+    color: black;
+    opacity: 1;
+    visibility: visible;
+}
+.components-info{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+.overlayc2:hover .icon1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: rgb(20, 44, 178);
+    opacity: 1;
+    visibility: visible;
+}
+.overlayc2:hover .ss{
+    margin-left: 20px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+.tools{
+    width: 100%;
+    height: 800px;
+    background-image: url(../images/63f59ad81f9e28b327a95d59_Top\ generative\ AI\ tools_Blog\ hero.png);
+    background-size: cover;
+    position: relative;
+}
+.tools-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+.title{
+    width: 80%;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;
+    position: absolute;
+    left: 10%;
+    margin-top: 50px;
+}
+.title p{
+    width: 90px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 10px;
+}
+.tools-container1{
+    width: 80%;
+    overflow: auto;
+    position: absolute;
+    top: 250px;
+    left: 10%;
+}
+.tools-items{
+    width: 270px;
+    height: 120px;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: capitalize;
+    line-height: 25px;
+    float: left;
+    position: relative;
+    z-index: 1;
+    transition: 0.7s;
+}
+.tools-items h2{
+    font-size: 25px;
+    display: inline-block;
+}
+.tools-icon{
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 3px;
+    color: rgb(32, 45, 195);
+}
+.tools-item-mid{
+    margin: 0 202px;
+}
+.mm{
+    margin-top: 90px;
+}
+.tools-items::after{
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: #fff;
+    opacity: 0;
+    transition: 0.7s;
+    position: absolute;
+    z-index: -1;
+}
+.tools-items:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+.tools-items:hover{
+    color: black;
+}
+/* ////////////////////////////////chatgpt section //////////////////////////////////////////////////////////////*/
+.gpt-container{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.gpt-content{
+    width: 76%;
+    height: 600px;
+    position: absolute;
+    left: 12%;
+    background-image: url(../images/chatgpt.webp);
+    background-size:cover ;
+    overflow: auto;
+    border-radius: 20px;
+}
+.gpt-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.gpt-info{
+    width: 50%;
+    float: left;
+    height: 600px;
+}
+.gpt-photo{
+    width: 50%;
+    height: 580px;
+    float: right;
+    border-radius: 150px;
+    opacity: 0.9;
+}
+.gpt-photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+    display: block;
+}
+.gpt-info h2{
+    color: #fff;
+    font-size: 45px;
+    margin-left: 10px;
+}
+.gpt-info .gptline{
+    width: 80px;
+    height: 4px;
+    background-color: #fff;
+    margin-left: 10px;
+}
+.gpt-info .gptinfo{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    display: inline;
+    margin-left: 5px;
+}
+.gpt-icon{
+    color: #030fe9;
+    display: inline;
+    margin-left: 5px;
+}
+.gpt-photo li{
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius:50%;
+    margin: 0px 5px;
+    display: inline-block;
+}
+.gpt-photo li:hover{
+    background-color: #2933ee;
+}
+.gpt-photo li.active{
+    background-color: #2933ee;
+}
+.gpt-photo ul{
+    margin-left: 44%;
+}
+/* //////////////////////////////////////////////////users section/////////////////////////////////////////////////////////// */
+.users{
+    background-image: url(../images/shutterstock_1131418724.jpg);
+    background-attachment: fixed;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+   
+}
+.users-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+.users-container{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+}
+.user-items{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-top: 150px;
+    color: #fff;
+    font-size: 25px;
+}
+.users-icon{
+    font-size: 35px;
+    margin-right: 10px;
+    margin-top: 3px;
+    color: rgb(32, 45, 195);
+}
+/* ///////////////////////////////////////// pricing table ////////////////////////////////////////////////////////////////////// */
+.pricing{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/images.jpeg);
+    background-size: cover;
+}
+.pricing-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+.pricing-container{
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 200px;
+    overflow: auto;
+}
+.pricing-title{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+}
+.pricing-info{
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    position: relative;
+}
+.pricing-info h2{
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.pricing-info p{
+    height: 4px;
+    width: 80px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 5px;
+}
+.pricing-content{
+    width: 300px;
+    height: 400px;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    float: left;
+    position: relative;
+    z-index: 1;
+    transition: 1s;
+}
+.pricing-content h2{
+    font-size: 25px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.pc2{
+    margin: 0 152px;
+}
+.price{
+    height: 110px;
+    width: 110px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 90px;
+    transform: translate(-50%, 0);
+    transition: 1s;
+}
+.price p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-left: 30px;
+    width: 40px;
+    transition: 1s;
+}
+.pricing-content .pricing-span{
+    margin-top: 180px;
+    text-transform: capitalize;
+}
+.pricing-btn{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #161fd3;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.pricing-content::after{
+    content: "";
+    height: 0;
+    width: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    transition: 0.7s;
+}
+.pricing-content:hover::after{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius:15px;
+}
+.pricing-content:hover{
+    color: black;
+}
+.pricing-content:hover .price{
+    border: 2px solid black;
+}
+.pricing-content:hover .price p{
+    color: black;
+}
+.pricing-btn:hover{
+    height: 50px;
+    width: 110px;
+    border-radius: 20px;
+    font-size: 17px;
+}
+/* /////////////////////////////////////////////categories of ai///////////////////////////////////////////////////////// */
+.categories{
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/Types-of-Artificial-Intelligence-Categories-of-AI.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.categories-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+.categories-content{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+    overflow: auto;
+}
+.categories-content1{
+    width: 50%;
+    float: left;
+    clear: both;
+    margin-top: 90px;
+}
+.categories-image{
+    float: left;
+}
+.categories-image img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.categories-info{
+    color: #fff;
+    float: left;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+.categories-info h2{
+    font-size: 28px;
+    font-weight: bolder;
+}
+.categories-content1 .ppp{
+    display: block;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.categories-content2{
+    width: 50%;
+    float: left;
+    margin-top: 90px;
+}
+.ppp2{
+    display: block;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+/* ////////////////////////////////////////////////team section//////////////////////////////////////////// */
+.team{
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/AI-header.jpg);
+    background-size: cover;
+}
+.team-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0 , 0.7);
+    position: relative;
+}
+.team-title{
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50% , 0);
+}
+.team-title h2{
+    font-size: 35px;
+}
+.team-title p{
+    height: 4px;
+    background-color: #fff;
+    width: 90px;
+    margin: auto;
+    margin-top: 10px;
+}
+.team-container{
+    width: 100%;
+    position: relative;
+}
+.team-content{
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 190px;
+    overflow: auto;
+}
+.team-item{
+    width: 30%;
+    height: 380px;
+    float: left;
+    padding: 14px 18px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(25, 25, 54);
+    position: relative;
+    z-index: 1;
+}
+.team-item2{
+    margin: 0 5%;
+}
+.team-image{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-image img{
+    width: 100%;
+    height: 250px;
+}
+.team-img-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0 , 0.7);
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+.team-img-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #2c34d4;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: auto;
+}
+.team-img-overlay a i{
+    font-size: 30px;
+    line-height: 40px;
+    color: #fff;
+}
+.team-item:hover .team-img-overlay{
+    visibility: visible;
+}
+.team-info{
+    color: #fff;
+    line-height: 25px;
+}
+.team-item::after{
+    content: "";
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    position: absolute;
+    transition: 1s;
+    z-index: -1;
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+.team-info p{
+    text-transform: capitalize;
+    font-size: 17px;
+    transition: 1s;
+}
+.team-info h2{
+    transition: 1s;
+}
+.team-item:hover p{
+    color: black;
+}
+.team-item:hover h2{
+    color: black;
+}
+/* ////////////////////////////////////////////////// developer section//////////////////////////////////////////// */
+.developer-container{
+    width: 100%;
+    background-color: rgba(151, 151, 176, 0.3);
+}
+.developer-title{
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    padding-top: 30px;
+}
+.developer-title p{
+    height: 4px;
+    width: 90px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 5px;
+}
+.developer-title h2{
+    font-size: 35px;
+}
+.developer-content{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    overflow: auto;
+}
+.developer-item{
+    width: 30%;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    float: left;
+    position: relative;
+    border-radius: 15px;
+    z-index: 1;
+}
+.developer-item a{
+    text-decoration: none;
+    color: #11104f;
+    font-weight: bolder;
+}
+.developer-item a:hover{
+    color: #030fe9;
+}
+.developer-item-image{
+    height: 280px;
+    width: 280px;
+    margin: auto;
+}
+.developer-item-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.developer-item2{
+    margin: 0 5%;
+}
+.developer-item i{
+    padding: 0px;
+    color: #11104f;
+}
+.developer-item h2{
+    text-decoration: underline;
+    margin-top: 20px;
+    line-height: 30px;
+    color: black;
+}
+.developer-item p{
+    padding: 5px 0;
+    color: black;
+    line-height: 20px;
+}
+.developer-item::after{
+    content: "";
+    height: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 15px;
+    transition: 1s;
+    z-index: -1;
+}
+.developer-item:hover::after{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(84, 164, 240, 0.3);
+}
+.developer-info{
+    margin-top: 5px;
+}
+/* //////////////////////////////////////////footer///////////////////////////////////////////////////// */
+.footer{
+    width: 100%;
+}
+.footer-image{
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+}
+.footer-image img{
+    width: 300px;
+}
+.footer-info{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #fff;
+}
+.footer-info li{
+    display: inline-block;
+    background-color: #2299da;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
+.footer-info li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 35px;
+}
+.footer-info li a i{
+    line-height: 60px;
+}
+.footer-info p{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.footer-info li::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.4s;
+    z-index: -1;
+}
+.footer-info li:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: #232bbe;
+    border-radius: 50%;
+}
